@@ -309,6 +309,7 @@ hr{
 .card{
     background-color: transparent;
     width: 95%;
+    border: 0px;
 }
 .service-wrapper{
     padding-right: 50px;
@@ -330,7 +331,11 @@ hr{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
-
+@media(max-width: 540px){
+    .card{
+        width: 100%;
+    }
+}
 
 
 
