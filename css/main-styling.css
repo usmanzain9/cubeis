@@ -1,0 +1,346 @@
+/*********************/
+/*  Global Settings  */
+/*********************/
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+/***********************/
+/*  Section 1 Styling  */
+/***********************/
+
+.smallp{
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 1em;
+    line-height: 7em;
+    opacity: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.section1{
+    height: 100%;
+    width: 100%;
+}
+.bg-wrap{
+    background-color: #2F2E33;
+}
+.cubeis-logo{
+    margin-top: 60px;
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    opacity: 0;
+    display: block;
+}
+.imgGlobal {
+    display: block;
+    margin: auto;
+}
+.cls-1,.cls-2{
+    fill:none;
+    stroke:#fff;
+    stroke-miterlimit:10;
+}
+.cls-1{
+    stroke-width:5px;
+}
+.cls-2{
+    stroke-width:4px;
+}
+.cls-1edit,.cls-2edit{
+  fill: #fff;
+  opacity: 0;
+}
+.cls-1edit{
+    stroke-width:5px;
+}
+.cls2-edit{
+    stroke-width:4px;
+}
+.logo-container{
+    height: 150px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width: 600px){
+    .logo-container, .cubeis-logo{
+        width: 350px;
+    }
+    .logo-container{
+        height: 125px;
+    }
+    
+}
+@media(max-width: 462px){
+    .logo-container, .cubeis-logo{
+        width: 300px;
+    }
+    .logo-container{
+        height: 105px;
+    }
+}
+@media(max-width: 420px){
+    .logo-container, .cubeis-logo{
+        width: 250px;
+    }
+    .logo-container{
+        height: 90px;
+    }
+}
+@media(max-width: 452px){
+    .smallp{
+        letter-spacing: 0.7em;
+    }
+}
+
+/***********************/
+/*  Section 2 Styling  */
+/***********************/
+
+.section2{
+    height: 100%;
+    background-color: #3A5199;
+    padding-top: 100px;
+    padding-left: 50px;
+    position: relative;
+    z-index: 1;
+}
+.section2:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-2.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.sec2-txt1, .sec2-txt2, .sec2-txt3{
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    display: block;
+    line-height: 0.8em;
+}
+.sec2-txt1{
+    font-size: 72px;
+    letter-spacing: 0.01px;
+    font-weight: 300;
+}
+.sec2-txt2{
+    font-size: 85px;
+    font-weight: 500;
+}
+.sec2-txt3{
+    font-size: 140px;
+    font-weight: 600;
+}
+@media(max-width: 1270px){
+    .sec2-txt1{
+        font-size: 65px;
+    }
+    .sec2-txt2{
+        font-size: 75px;
+    } 
+    .sec2-txt3{
+        font-size: 120px;
+    }
+}
+@media(max-width: 1000px){
+    .sec2-txt1{
+        font-size: 60px;
+    }
+    .sec2-txt2{
+        font-size: 70px;
+    } 
+    .sec2-txt3{
+        font-size: 100px;
+    }
+    .sec2-para{
+        font-size: 24px !important;
+    }
+}
+@media(max-width: 768px){
+    .sec2-txt1{
+        font-size: 65px;
+        text-align: center;
+    }
+    .sec2-txt2{
+        font-size: 65px;
+        text-align: center;
+    } 
+    .sec2-txt3{
+        font-size: 85px;
+        text-align: center;
+    }
+    .section2{
+        padding-left: 0px;
+    }
+    .sec2-para{
+        padding-right: 0px !important;
+        text-align: center;
+    }
+    hr{
+        float: none !important;
+        width: 50% !important;
+    }
+    .hr-wrapper{
+        margin-top: 25px !important;
+    }
+}
+@media(max-width: 670px){
+    .sec2-txt1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .sec2-txt2{
+        font-size: 55px;
+        text-align: center;
+    } 
+    .sec2-txt3{
+        font-size: 75px;
+        text-align: center;
+    }
+    .section2{
+        padding-left: 0px;
+    }
+}
+@media(max-width: 600px){
+    .sec2-txt1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sec2-txt2{
+        font-size: 50px;
+        text-align: center;
+    } 
+    .sec2-txt3{
+        font-size: 65px;
+        text-align: center;
+    }
+    .section2{
+        padding-left: 0px;
+    }
+}
+@media(max-width: 624px){
+    .sec2-txt1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .sec2-txt2{
+        font-size: 38px;
+        text-align: center;
+    } 
+    .sec2-txt3{
+        font-size: 50px;
+        text-align: center;
+    }
+    .section2{
+        padding-left: 0px;
+    }
+}
+.hr-wrapper{
+    width: 100%;
+    height: 34px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+hr{
+    height: 1px;
+    width: 30%;
+    float: left;
+    background-color: white;
+    display: block;
+}
+.sec2-para{
+    display: block;
+    font-size: 28px;
+    color: #d6d8ff;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 15%;
+    
+}
+
+
+/***********************/
+/*  Section 3 Styling  */
+/***********************/
+
+.section3{
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    overflow: auto;
+    display: block;
+}
+.parallax { 
+    /* The image used */
+    background-image: url("../images/landing1-bluegrad.png");
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec3-mainhead{
+    font-weight:300;
+    padding-top:5%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 74px;
+    font-family: 'Montserrat' , sans-serif;
+}
+.sec3-sechead{
+     font-weight:700;
+    text-align: center;
+    color: #ffffff;
+    font-size: 74px;
+    font-family: 'Open Sans' , sans-serif;
+}
+.card{
+    background-color: transparent;
+    width: 95%;
+}
+.service-wrapper{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.margin-right{
+    margin-right: 5%;
+}
+.margin-left{
+    margin-left: 5%;
+}
+.margin-top{
+    margin-top: 3%;
+}
+.service-wrapper{
+    margin-top: 50px;
+}
+.ico-head{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/***********************/
+/*  Section 4 Styling  */
+/***********************/
+
+.section4{
+    background: #6441A5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+}
