@@ -299,13 +299,6 @@ hr{
     font-size: 74px;
     font-family: 'Montserrat' , sans-serif;
 }
-.sec3-sechead{
-     font-weight:700;
-    text-align: center;
-    color: #ffffff;
-    font-size: 74px;
-    font-family: 'Open Sans' , sans-serif;
-}
 .card{
     background-color: transparent;
     width: 95%;
@@ -351,8 +344,83 @@ hr{
 /***********************/
 
 .section4{
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #D5D6D2;
     height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.section4:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-2.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+.sec4-mainhead{
+    padding-top:5%;
+    margin-bottom: 3%;
+    font-weight:300;
+    text-align: center;
+    color: #333;
+    font-size: 74px;
+    font-family: 'Open Sans' , sans-serif;
+}
+.color-form{
+    background-color: #333;
+    border-radius: 0px;
+    border: 1px solid #333;
+    height: 45px;
+}
+.form-edit{
+    width: 100% !important;
+}
+.color-form1{
+    background-color: #333;
+    border-radius: 0px;
+    border: 1px solid #333;
+}
+.contactText{
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+.btn-color{
+    background-color: #2F2E33;
+    border: 1px solid #2F2E33;
+}
+.contact-pad{
+    padding-right: 50px;
+
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #999 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #999 !important;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #999 !important;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #999 !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #999 !important;
+}
+
+/********************/
+/*  Footer Styling  */
+/********************/
+
+.footer-sec{
+    height: 30%;
+    background-color: #333;
 }
