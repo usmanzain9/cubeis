@@ -16,7 +16,6 @@
         <link href="css/main-styling.css" rel="stylesheet" >
         <link href="css/animate.css" rel="stylesheet">
 
-        
     
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -24,6 +23,7 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/0494cc08f3.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.2/vivus.min.js"></script>
+        <script src="js/progressbar.js"></script>
 
         
         
@@ -134,11 +134,31 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12" style="height: 70px;"></div>
+                    <div class="col-sm-12 skillsec-wrapper">
+                        <h1 class="sec3-1-mainhead">SKILL &amp; EXPERTISE</h1>
+                        <div class="col-sm-3 progbar">
+                            <div class="prog-circle" id="container1"></div>
+                            <h3 style="text-align: center; margin-top: 10px;">HTML/CSS</h3>
+                        </div>
+                        <div class="col-sm-3 progbar">
+                            <div class="prog-circle" id="container2"></div>
+                            <h3 style="text-align: center; margin-top: 10px;">UX/UI Design</h3>
+                        </div>
+                        <div class="col-sm-3 progbar">
+                            <div class="prog-circle" id="container3"></div>
+                            <h3 style="text-align: center; margin-top: 10px;">JQuery</h3>
+                        </div>
+                        <div class="col-sm-3 progbar">
+                            <div class="prog-circle" id="container4"></div>
+                            <h3 style="text-align: center; margin-top: 10px;">PHP</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="section4">
+            <div class="row section4">
+                <div>
                     <h1 class="sec4-mainhead">CONTACT US</h1>
                     <div class="col-md-1"></div>
                     <div class="col-md-4 contact-pad">
@@ -174,7 +194,6 @@
             </div>
         </div>
         
-
         <script>
             setTimeout(function(){
                 $('svg').fadeTo(1000, 1)
@@ -191,9 +210,151 @@
             }, 6500);
             
             setTimeout(function(){
-                $('.smallp').addClass('animated flipInX')
+                $('.smallp').addClass('animated fadeIn')
                 $('.smallp').css('opacity', 1)
             },6600);
+            
+            
+            setTimeout(function(){
+            var bar = new ProgressBar.Circle(container1, {
+              color: '#fff',
+              // This has to be the same size as the maximum width to
+              // prevent clipping
+              strokeWidth: 6,
+              trailWidth: 2,
+              easing: 'easeInOut',
+              duration: 3000,
+              text: {
+                autoStyleContainer: false
+              },
+              from: { color: '#2F2E33', width: 2 },
+              to: { color: '#2F2E33', width: 6 },
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+                circle.path.setAttribute('stroke-width', state.width);
+
+                var value = Math.round(circle.value() * 100);
+                if (value === 0) {
+                  circle.setText('');
+                } else {
+                  circle.setText(value);
+                }
+
+              }
+            });
+                
+            bar.text.style.fontFamily = '"Open Sans", Helvetica, sans-serif';
+            bar.text.style.fontSize = '2rem';
+            bar.text.style.textAlign = 'center';   
+
+            bar.animate(0.90);  // Number from 0.0 to 1.0
+                }, 500);
+            
+            setTimeout(function(){
+            var bar = new ProgressBar.Circle(container2, {
+              color: '#fff',
+              // This has to be the same size as the maximum width to
+              // prevent clipping
+              strokeWidth: 6,
+              trailWidth: 2,
+              easing: 'easeInOut',
+              duration: 3000,
+              text: {
+                autoStyleContainer: false
+              },
+              from: { color: '#2F2E33', width: 2 },
+              to: { color: '#2F2E33', width: 6 },
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+                circle.path.setAttribute('stroke-width', state.width);
+
+                var value = Math.round(circle.value() * 100);
+                if (value === 0) {
+                  circle.setText('');
+                } else {
+                  circle.setText(value);
+                }
+
+              }
+            });
+                
+            bar.text.style.fontFamily = '"Open Sans", Helvetica, sans-serif';
+            bar.text.style.fontSize = '2rem';
+
+            bar.animate(0.80);  // Number from 0.0 to 1.0
+                }, 500);
+            
+            setTimeout(function(){
+            var bar = new ProgressBar.Circle(container3, {
+              color: '#fff',
+              // This has to be the same size as the maximum width to
+              // prevent clipping
+              strokeWidth: 6,
+              trailWidth: 2,
+              easing: 'easeInOut',
+              duration: 3000,
+              text: {
+                autoStyleContainer: false
+              },
+              from: { color: '#2F2E33', width: 2 },
+              to: { color: '#2F2E33', width: 6 },
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+                circle.path.setAttribute('stroke-width', state.width);
+
+                var value = Math.round(circle.value() * 100);
+                if (value === 0) {
+                  circle.setText('');
+                } else {
+                  circle.setText(value);
+                }
+
+              }
+            });
+                
+            bar.text.style.fontFamily = '"Open Sans", Helvetica, sans-serif';
+            bar.text.style.fontSize = '2rem';
+
+            bar.animate(0.6);  // Number from 0.0 to 1.0
+                }, 500);
+            
+            setTimeout(function(){
+            var bar = new ProgressBar.Circle(container4, {
+              color: '#fff',
+              // This has to be the same size as the maximum width to
+              // prevent clipping
+              strokeWidth: 6,
+              trailWidth: 2,
+              easing: 'easeInOut',
+              duration: 3000,
+              text: {
+                autoStyleContainer: false
+              },
+              from: { color: '#2F2E33', width: 2 },
+              to: { color: '#2F2E33', width: 6 },
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+                circle.path.setAttribute('stroke-width', state.width);
+
+                var value = Math.round(circle.value() * 100);
+                if (value === 0) {
+                  circle.setText('');
+                } else {
+                  circle.setText(value);
+                }
+
+              }
+            });
+                
+            bar.text.style.fontFamily = '"Open Sans", Helvetica, sans-serif';
+            bar.text.style.fontSize = '2rem';
+
+            bar.animate(0.75);  // Number from 0.0 to 1.0
+                }, 500);
             
         </script>
                 

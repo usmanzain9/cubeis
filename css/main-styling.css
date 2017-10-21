@@ -7,6 +7,7 @@ body, html {
     padding: 0px;
 }
 
+
 /***********************/
 /*  Section 1 Styling  */
 /***********************/
@@ -94,6 +95,20 @@ body, html {
 @media(max-width: 452px){
     .smallp{
         letter-spacing: 0.7em;
+    }
+}
+@media(min-width: 1920px){
+    .smallp{
+        letter-spacing: 1.5em;
+        font-size: 22px;
+    }
+    .cubeis-logo{
+        margin-top: 100px;
+        width: 700px;
+    }
+    .logo-container{
+        height: 300px;
+        width: 700px
     }
 }
 
@@ -245,6 +260,13 @@ body, html {
     .section2{
         padding-left: 0px;
     }
+    .prog-circle{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .progbar{
+        padding:30px !important;
+    }
 }
 .hr-wrapper{
     width: 100%;
@@ -274,7 +296,7 @@ hr{
 /***********************/
 
 .section3{
-    height: 100%;
+    height: auto;
     width: 100%;
     color: whitesmoke;
     overflow: auto;
@@ -284,7 +306,7 @@ hr{
     /* The image used */
     background-image: url("../images/landing1-bluegrad.png");
     /* Full height */
-    height: 100%; 
+    height: auto; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -336,6 +358,28 @@ hr{
         padding-right: 20px;
     }
 }
+.skillsec-wrapper{
+    background: #3A5199;
+    height: auto;
+    margin-bottom: 200px;
+}
+.prog-circle {
+  width: 200px;
+  height: 200px;;
+  position: relative;
+}
+.progbar{
+    padding:60px;
+}
+.sec3-1-mainhead{
+    padding-top:5%;
+    margin-bottom: 2%;
+    font-weight:300;
+    text-align: center;
+    color: #fff;
+    font-size: 74px;
+    font-family: 'Open Sans' , sans-serif;
+}
 
 
 
@@ -345,34 +389,22 @@ hr{
 
 .section4{
     background: #D5D6D2;
-    height: 100%;
+    height: auto;
     position: relative;
+    padding-bottom: 100px;
     z-index: 1;
-}
-.section4:after {
-    background: inherit;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: skewY(-2.5deg);
-    transform-origin: 100%;
-    z-index: -1;
 }
 .sec4-mainhead{
     padding-top:5%;
     margin-bottom: 3%;
     font-weight:300;
     text-align: center;
-    color: #333;
+    color: #2F2E33;
     font-size: 74px;
     font-family: 'Open Sans' , sans-serif;
 }
 .color-form{
-    background-color: #333;
+    background-color: #2F2E33;
     border-radius: 0px;
     border: 1px solid #333;
     height: 45px;
@@ -381,9 +413,9 @@ hr{
     width: 100% !important;
 }
 .color-form1{
-    background-color: #333;
+    background-color: #2F2E33;
     border-radius: 0px;
-    border: 1px solid #333;
+    border: 1px solid #2F2E33;
 }
 .contactText{
     font-weight: 300;
@@ -422,5 +454,6 @@ hr{
 
 .footer-sec{
     height: 30%;
-    background-color: #333;
+    background-color: #2F2E33;
+    z-index: -1
 }
