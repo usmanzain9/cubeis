@@ -260,13 +260,23 @@ body, html {
     .section2{
         padding-left: 0px;
     }
-    .prog-circle{
-        margin-left: auto;
-        margin-right: auto;
+
+    .sec4-mainhead{
+        font-size: 68px !important;
     }
-    .progbar{
-        padding:30px !important;
+    .sec3-1-mainhead{
+        font-size: 68px !important;
     }
+    .sec3-mainhead{
+        font-size: 68px !important;
+    }
+    .contactText{
+        text-align: center;
+    }
+    .contact-pad{
+    padding-right: 15px !important;
+
+}
 }
 .hr-wrapper{
     width: 100%;
@@ -324,6 +334,7 @@ hr{
 .card{
     background-color: transparent;
     width: 95%;
+    border: 0px;
 }
 .service-wrapper{
     padding-right: 50px;
@@ -341,7 +352,7 @@ hr{
 }
 .ico-head{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 @media(max-width: 540px){
     .card{
@@ -358,18 +369,45 @@ hr{
         padding-right: 20px;
     }
 }
+@media(max-width: 1098px){
+    .ico{
+        font-size: 2em !important;
+    }
+    .ico-head{
+        font-size: 1.5em;
+    }
+}
+@media(max-width: 970px){
+    .ico{
+        font-size: 1.8em !important;
+    }
+    .ico-head{
+        font-size: 1.3em;
+    }
+    .service-txt{
+        font-size: 14px;
+    }
+}
+
+
+/*************************/
+/*  Section 3-1 Styling  */
+/*************************/
+
 .skillsec-wrapper{
     background: #3A5199;
     height: auto;
     margin-bottom: 200px;
 }
 .prog-circle {
-  width: 200px;
-  height: 200px;;
-  position: relative;
+    width: auto;
+    height: auto;;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 .progbar{
-    padding:60px;
+    padding:5%;
 }
 .sec3-1-mainhead{
     padding-top:5%;
@@ -379,6 +417,13 @@ hr{
     color: #fff;
     font-size: 74px;
     font-family: 'Open Sans' , sans-serif;
+}
+.prog-head{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    
 }
 
 
@@ -452,8 +497,136 @@ hr{
 /*  Footer Styling  */
 /********************/
 
-.footer-sec{
-    height: 30%;
-    background-color: #2F2E33;
+.footer-sec{ 
     z-index: -1
+}
+.footer-bg{
+    background-color: #2F2E33; 
+    height: auto;
+    padding-bottom: 20px;
+        
+}
+.footer-logo{
+    margin-top: 40px;
+    width: 300px;
+    float: left;
+
+}
+.footer-para{
+    float: right;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    color: #D5D6D2;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.footer-para-head{
+    
+    font-size: 19px;
+
+}
+.foot-text{
+    color: #D5D6D2;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    float: left;
+    position: absolute;
+}
+@media(max-width:576px){
+    .footer-logo{
+        width: 250px;
+        display: block;
+    }
+}
+@media(max-width: 675px){
+    .footer-para{
+        float: left;
+        margin-top: 60px;
+    }
+    .footer-logo{
+        margin-right: 100%;
+    }
+}
+
+
+/****************************************************/
+/*  Queries for responsive design on large screens  */
+/****************************************************/
+
+@media(min-width: 1600px){
+     .sec3-mainhead, .sec3-1-mainhead, .sec4-mainhead{
+        font-size: 86px;
+    }
+    .smallp{
+        letter-spacing: 1.5em;
+        font-size: 20px;
+    }
+    .cubeis-logo{
+        margin-top: 100px;
+        width: 600px;
+    }
+    .logo-container{
+        height: 250px;
+        width: 600px
+    }
+    .sec2-txt1{
+        font-size: 85px;
+    }
+    .sec2-txt2{
+        font-size: 100px;
+    }
+    .sec2-txt3{
+        font-size: 165px;
+    }
+    .sec2-para{
+        font-size: 40px;
+    }
+    .ico{
+        font-size: 4em !important;
+    }
+    .ico-head{
+        font-size: 2.3em
+    }
+    .service-txt{
+        font-size: 25px;
+    }
+    .color-form{
+        height: 55px;
+    }
+    .contactText{
+        font-size: 30px;
+    }
+}
+@media(min-width: 1920px){
+     .sec3-mainhead, .sec3-1-mainhead, .sec4-mainhead{
+        font-size: 95px;
+    }
+    .sec2-txt1{
+        font-size: 100px;
+    }
+    .sec2-txt2{
+        font-size: 120px;
+    }
+    .sec2-txt3{
+        font-size: 185px;
+    }
+    .sec2-para{
+        font-size: 40px;
+    }
+    .ico{
+        font-size: 5em !important;
+    }
+    .ico-head{
+        font-size: 3em
+    }
+    .service-txt{
+        font-size: 30px;
+    }
+    .color-form{
+        height: 65px;
+    }
+    .contactText{
+        font-size: 40px;
+    }
 }
